@@ -1,0 +1,384 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00012 
+   (rule
+   )
+   (wire (path BOT 25400  -3050000 3816000 -3050000 4127500 -3126200 4127500
+     -3126200 4318000 -3158000 4318000 -3158000 4642000)
+    (connect (terminal pin R7-0) (terminal pin "SAIDA LCD"-2))
+   )
+   )
+   (Net #00022 
+   (rule
+   )
+   (wire (path TOP 25400  -7175500 5207000 -7175500 5250000 -6550000 5250000)
+    (connect (terminal via) (terminal pin R6-1))
+   )
+   (wire (path BOT 25400  -4000000 3177000 -7175500 3177000 -7175500 5207000)
+    (connect (terminal pin Q1-1) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -7175500 5207000)
+   )
+   (Net #00023 
+   (rule
+   )
+   (wire (path BOT 25400  -4127000 3050000 -4127000 2450000 -3900000 2450000)
+    (connect (terminal pin Q1-0) (terminal pin D1-0))
+   )
+   (wire (path BOT 25400  -3854000 1700000 -3854000 1968500 -3900000 1968500
+     -3900000 2450000)
+    (connect (terminal pin J1-1) (terminal pin D1-0))
+   )
+   )
+   (Net BTN+ 
+   (rule
+   )
+   (wire (path BOT 25400  -7300000 1700000 -6500000 1700000 -6500000 2434000)
+    (connect (terminal pin BTN+-0) (terminal pin R1-1))
+   )
+   )
+   (Net BTN- 
+   (rule
+   )
+   (wire (path BOT 25400  -6100000 1700000 -5650000 1700000 -5650000 2434000)
+    (connect (terminal pin BTN--0) (terminal pin R2-1))
+   )
+   )
+   (Net D0 
+   (rule
+   )
+   (wire (path BOT 25400  -2692000 5850000 -2692000 5524500 -1968500 5524500
+     -1968500 4642000 -2142000 4642000)
+    (connect (terminal pin J2-2) (terminal pin "SAIDA LCD"-6))
+   )
+   )
+   (Net D1 
+   (rule
+   )
+   (wire (path BOT 25400  -2946000 5850000 -2946000 5397500 -2142000 5397500
+     -2142000 4896000)
+    (connect (terminal pin J2-3) (terminal pin "SAIDA LCD"-7))
+   )
+   )
+   (Net D2 
+   (rule
+   )
+   (wire (path BOT 25400  -3200000 5850000 -3200000 5334000 -2396000 5334000
+     -2396000 4896000)
+    (connect (terminal pin J2-4) (terminal pin "SAIDA LCD"-8))
+   )
+   )
+   (Net D3 
+   (rule
+   )
+   (wire (path BOT 25400  -3454000 5850000 -3454000 5207000 -2650000 5207000
+     -2650000 4896000)
+    (connect (terminal pin J2-5) (terminal pin "SAIDA LCD"-9))
+   )
+   )
+   (Net D4 
+   (rule
+   )
+   (wire (path BOT 25400  -3708000 5850000 -3708000 5143500 -2904000 5143500
+     -2904000 4896000)
+    (connect (terminal pin J2-6) (terminal pin "SAIDA LCD"-10))
+   )
+   )
+   (Net D5 
+   (rule
+   )
+   (wire (path BOT 25400  -3158000 4896000 -3158000 5080000 -3962000 5080000
+     -3962000 5850000)
+    (connect (terminal pin "SAIDA LCD"-11) (terminal pin J2-7))
+   )
+   )
+   (Net D6 
+   (rule
+   )
+   (wire (path TOP 25400  -3412000 4896000 -3412000 5240503 -4216000 5240503
+     -4216000 5850000)
+    (connect (terminal pin "SAIDA LCD"-12) (terminal pin J2-8))
+   )
+   )
+   (Net D7 
+   (rule
+   )
+   (wire (path BOT 25400  -4470000 5850000 -4470000 5588000 -4127500 5588000
+     -4127500 4896000 -3666000 4896000)
+    (connect (terminal pin J2-9) (terminal pin "SAIDA LCD"-13))
+   )
+   )
+   (Net E 
+   (rule
+   )
+   (wire (path BOT 25400  -2396000 4642000 -2396000 4381500 -1905000 4381500
+     -1905000 5588000 -2438000 5588000 -2438000 5850000)
+    (connect (terminal pin "SAIDA LCD"-5) (terminal pin J2-1))
+   )
+   )
+   (Net ENTER 
+   (rule
+   )
+   (wire (path TOP 25400  -6350000 4889500 -6350000 3296000 -7500000 3296000)
+    (connect (terminal via) (terminal pin ENTER-0))
+   )
+   (wire (path BOT 25400  -5650000 4900000 -6350000 4900000 -6350000 4889500)
+    (connect (terminal pin R3-1) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -6350000 4889500)
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 152400  -3683000 3302000 -3683000 3050000 -3873000 3050000)
+    (connect (terminal wire) (terminal pin Q1-2))
+   )
+   (wire (path BOT 152400  -2476500 3302000 -3683000 3302000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  -3683000 3302000 -3683000 3450000 -5650000 3450000)
+    (connect (terminal wire) (terminal pin R2-0))
+   )
+   (wire (path BOT 152400  -4350000 3884000 -4350000 3896700 -5050000 3896700
+     -5050000 3900000)
+    (connect (terminal pin R8-0) (terminal pin R4-0))
+   )
+   (wire (path BOT 152400  -7048500 5969000 -7048500 6350000 -4826000 6350000
+     -4826000 4642000 -3666000 4642000)
+    (connect (terminal wire) (terminal pin "SAIDA LCD"-0))
+   )
+   (wire (path BOT 152400  -7048500 5969000 -7504000 5969000 -7504000 5750000)
+    (connect (terminal wire) (terminal pin SUPLY-0))
+   )
+   (wire (path BOT 152400  -2476500 3050000 -2476500 1696000 -2700000 1696000)
+    (connect (terminal wire) (terminal pin BUZ1-1))
+   )
+   (wire (path BOT 152400  -2650000 4642000 -2650000 4000500 -2095500 4000500
+     -2095500 3302000 -2476500 3302000)
+    (connect (terminal pin "SAIDA LCD"-4) (terminal wire))
+   )
+   (wire (path BOT 152400  -2476500 3302000 -2476500 3050000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  -5143500 4127500 -5143500 3900000 -5050000 3900000)
+    (connect (terminal wire) (terminal pin R4-0))
+   )
+   (wire (path BOT 152400  -5143500 4127500 -5650000 4127500 -5650000 3884000)
+    (connect (terminal wire) (terminal pin R3-0))
+   )
+   (wire (path BOT 152400  -5650000 3450000 -6500000 3450000)
+    (connect (terminal pin R2-0) (terminal pin R1-0))
+   )
+   (wire (path BOT 152400  -7000000 3884000 -7000000 5969000 -7048500 5969000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  -5650000 3884000 -7000000 3884000)
+    (connect (terminal pin R3-0) (terminal wire))
+   )
+   (wire (path BOT 152400  -7000000 3884000 -7000000 3466000)
+    (connect (terminal wire) (terminal pin R5-0))
+   )
+   (wire (path BOT 152400  -5650000 3450000 -5650000 3884000)
+    (connect (terminal pin R2-0) (terminal pin R3-0))
+   )
+   )
+   (Net RESET 
+   (rule
+   )
+   (wire (path BOT 25400  -7500000 2446000 -7302500 2446000 -7302500 2450000
+     -7000000 2450000)
+    (connect (terminal pin RESET-0) (terminal pin R5-1))
+   )
+   )
+   (Net RS 
+   (rule
+   )
+   (wire (path TOP 25400  -2904000 4642000 -2904000 4381500 -1968500 4381500
+     -1968500 5524500 -2184000 5524500 -2184000 5850000)
+    (connect (terminal pin "SAIDA LCD"-3) (terminal pin J2-0))
+   )
+   )
+   (Net SINAL-BUZZER 
+   (rule
+   )
+   (wire (path TOP 25400  -7500000 5100000 -5270500 5100000 -5270500 1950000
+     -2700000 1950000)
+    (connect (terminal pin BUZZ-0) (terminal pin BUZ1-0))
+   )
+   )
+   (Net SINAL-FIMDECURSO 
+   (rule
+   )
+   (wire (path TOP 25400  -6223000 5778500 -6223000 5478946 -4635500 5478946
+     -4635500 4900000 -4350000 4900000)
+    (connect (terminal via) (terminal pin R8-1))
+   )
+   (wire (path BOT 25400  -6050000 5750000 -6223000 5750000 -6223000 5778500)
+    (connect (terminal pin "FIM DE CURSO"-0) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -6223000 5778500)
+   )
+   (Net SINAL-TRANCA 
+   (rule
+   )
+   (wire (path TOP 25400  -7500000 4300000 -7175500 4300000 -7175500 4236500
+     -6858000 4236500 -6858000 4234000 -6550000 4234000)
+    (connect (terminal pin TRANCA-0) (terminal pin R6-0))
+   )
+   )
+   (Net START 
+   (rule
+   )
+   (wire (path TOP 25400  -4889500 2730500 -4889500 4127500 -5050000 4127500
+     -5050000 4916000)
+    (connect (terminal via) (terminal pin R4-1))
+   )
+   (wire (path BOT 25400  -4800000 1700000 -4800000 1968500 -4763600 1968500
+     -4763600 2741938 -4889500 2741938 -4889500 2730500)
+    (connect (terminal pin START-0) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -4889500 2730500)
+   )
+   (Net VCC/VDD 
+   (rule
+   )
+   (wire (path BOT 152400  -3429000 4318000 -3429000 2603500 -3050000 2603500)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  -3050000 2603500 -3050000 1700000 -3600000 1700000)
+    (connect (terminal wire) (terminal pin J1-0))
+   )
+   (wire (path BOT 152400  -3429000 4318000 -3420500 4318000 -3420500 4642000
+     -3412000 4642000)
+    (connect (terminal wire) (terminal pin "SAIDA LCD"-1))
+   )
+   (wire (path BOT 152400  -5796000 5461000 -5397500 5461000 -5397500 4318000
+     -3429000 4318000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  -3050000 2800000 -3050000 2603500)
+    (connect (terminal pin R7-1) (terminal wire))
+   )
+   (wire (path BOT 152400  -5796000 5461000 -5796000 5750000)
+    (connect (terminal wire) (terminal pin "FIM DE CURSO"-1))
+   )
+   (wire (path BOT 152400  -7874000 3549999 -7874000 3550000 -7500000 3550000)
+    (connect (terminal wire) (terminal pin ENTER-1))
+   )
+   (wire (path BOT 152400  -7500000 2700000 -7500000 2921000 -7874000 2921000)
+    (connect (terminal pin RESET-1) (terminal wire))
+   )
+   (wire (path BOT 152400  -7874000 2921000 -7874000 2700000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  -7250000 5750000 -7250000 5524500 -7874000 5524500)
+    (connect (terminal pin SUPLY-1) (terminal wire))
+   )
+   (wire (path BOT 152400  -7874000 3549999 -7874000 5524500)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  -5054000 1460500 -3600000 1460500 -3600000 1700000)
+    (connect (terminal wire) (terminal pin J1-0))
+   )
+   (wire (path BOT 152400  -4916000 2450000 -4916000 2095500 -5054000 2095500
+     -5054000 1700000)
+    (connect (terminal pin D1-1) (terminal pin START-1))
+   )
+   (wire (path BOT 152400  -7874000 2700000 -7874000 1700000 -7554000 1700000)
+    (connect (terminal wire) (terminal pin BTN+-1))
+   )
+   (wire (path BOT 152400  -5054000 1700000 -5054000 1460500)
+    (connect (terminal pin START-1) (terminal wire))
+   )
+   (wire (path BOT 152400  -5054000 1460500 -6354000 1460500)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  -7554000 1700000 -7554000 1460500 -6354000 1460500)
+    (connect (terminal pin BTN+-1) (terminal wire))
+   )
+   (wire (path BOT 152400  -6354000 1460500 -6354000 1700000)
+    (connect (terminal wire) (terminal pin BTN--1))
+   )
+   (wire (path BOT 152400  -7874000 3549999 -7874000 2921000)
+    (connect (terminal wire) (terminal wire))
+   )
+   )
+  )
+ )
